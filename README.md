@@ -58,6 +58,7 @@ mean that the system will try to read 2000 messages in 20 subsequent batches (by
 - (not required, but recomended :)) [Sitecore Powershell Extensions](https://marketplace.sitecore.net/Modules/Sitecore_PowerShell_console.aspx)
 - install [Data Exchange Framework SDK](https://oriflamecosmetics.sharepoint.com/:u:/t/global-it/scguild/EcwaAEo-gadDv_xYop6o060BwFGiBDbIxRXjIkSliDE1uw?e=Bx2JhV) 
 - synchronize items from the TDS project in the repository with your local Sitecore
+  - be careful when using TDS with _Lightning mode_: sometimes synchronization must be run twice, but with Lightning mode on you don't have to see the changes the second time :(
 - open solution and make your changes
 
 When you are done with your changes you need to copy the changed assemblies to your wwwroot manually to test the result. 
