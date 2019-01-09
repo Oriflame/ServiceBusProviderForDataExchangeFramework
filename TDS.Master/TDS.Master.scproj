@@ -24,11 +24,11 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreWebUrl>http://ma9.sc/</SitecoreWebUrl>
+    <SitecoreWebUrl>http://ma910.sc/</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
-    <SitecoreDeployFolder>C:\inetpub\wwwroot\ma9.sc</SitecoreDeployFolder>
-    <SitecoreAccessGuid>d5ccdcfa-f95b-44e8-8238-126868e03454</SitecoreAccessGuid>
+    <SitecoreDeployFolder>C:\inetpub\wwwroot\ma910.sc</SitecoreDeployFolder>
+    <SitecoreAccessGuid>5093b8ef-43ee-404e-955f-cb27d74bf31e</SitecoreAccessGuid>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\TDS.Master_Debug.xml</ValidationSettingsFilePath>
     <LightningDeployMode>True</LightningDeployMode>

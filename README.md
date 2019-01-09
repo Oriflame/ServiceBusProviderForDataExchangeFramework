@@ -63,7 +63,7 @@ When you are done with your changes you need to copy the changed assemblies to y
 ## Versioning
 Initial version of the provider is delivered in form of the standard Sitecore ZIP package. TODO: add a link to the package. 
 
-The subsequent adjustments / changes should be delivered via Sitecore update packages. For this purpose the existing TDS project (**TDS.Master**) should be utilized. For more info see, for example, [this link](https://www.hhogdev.com/help/tds/proppackaging). 
+The subsequent adjustments / changes should be delivered via Sitecore update packages. For this purpose the existing TDS project (**[TDS.Master](https://oriflame.visualstudio.com/MarketingAutomation/_git/Ori.Providers.AzureServiceBus?path=%2FTDS.Master&version=GBmaster)**) should be utilized. For more info see, for example, [this link](https://www.hhogdev.com/help/tds/proppackaging). 
 
 **Important:** One of the basic responsibility of the developer who is updating the provider is to ensure that all affected environments / developers will be informed / updated. 
 
