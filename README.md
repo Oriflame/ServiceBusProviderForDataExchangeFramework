@@ -22,7 +22,7 @@ The version of this provider suitable for DEF 2.0.1 (Sitecore 9.0) is available 
 # Getting Started
 To start using the provider you need to have installed already:
 - [Sitecore 9.1](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/91/Sitecore_Experience_Platform_91_Initial_Release.aspx)
-- [Data Exchange Framework 2.1.0](https://dev.sitecore.net/Downloads/Data_Exchange_Framework/2x/Data_Exchange_Framework_210.aspx) (just the basic package called Data Exchange Framework)
+- [Data Exchange Framework 2.1.0](https://oriflamecosmetics.sharepoint.com/:u:/t/global-it/scguild/EfWfr2UoUh5NmK0xeXeujacBJyjFx9KWRNsafc4p12Vbuw?e=agHzgc) (just the basic package called Data Exchange Framework)
 - (not required) [Sitecore Powershell Extensions](https://marketplace.sitecore.net/Modules/Sitecore_PowerShell_console.aspx)
 
 As the next step, simply install the package. TODO: add a link to the package.
@@ -54,7 +54,7 @@ mean that the system will try to read 2000 messages in 20 subsequent batches (by
 # Continuous Integration & Continuous Deployment/Delivery
 ## Local development
 In order to develop the code on your local machine you need to (in addition to all installation mentioned in the Getting Started section)
-- install [Data Exchange Framework SDK](https://dev.sitecore.net/Downloads/Data_Exchange_Framework/2x/Data_Exchange_Framework_210.aspx) 
+- install [Data Exchange Framework SDK](https://oriflamecosmetics.sharepoint.com/:u:/t/global-it/scguild/EcwaAEo-gadDv_xYop6o060BwFGiBDbIxRXjIkSliDE1uw?e=Bx2JhV) 
 - synchronize items from the TDS project in the repository with your local Sitecore
 - open solution and make your changes
 
