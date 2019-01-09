@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ori.DataExchange.Providers.ServiceBus", "Ori.DataExchange.Providers.ServiceBus.csproj", "{9E416CD2-41E7-4C30-9C90-934247B8F163}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master", "..\TDS.Master\TDS.Master.scproj", "{3D4538B8-0625-461F-A48C-A64B3FB173B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{9E416CD2-41E7-4C30-9C90-934247B8F163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E416CD2-41E7-4C30-9C90-934247B8F163}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E416CD2-41E7-4C30-9C90-934247B8F163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4538B8-0625-461F-A48C-A64B3FB173B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4538B8-0625-461F-A48C-A64B3FB173B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4538B8-0625-461F-A48C-A64B3FB173B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3D4538B8-0625-461F-A48C-A64B3FB173B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4538B8-0625-461F-A48C-A64B3FB173B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4538B8-0625-461F-A48C-A64B3FB173B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

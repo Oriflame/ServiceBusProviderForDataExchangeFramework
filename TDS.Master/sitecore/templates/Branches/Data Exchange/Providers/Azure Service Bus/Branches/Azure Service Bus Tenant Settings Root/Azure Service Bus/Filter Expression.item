@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {0717E02A-50D1-4948-8C55-B74016EEF154}
+database: master
+path: /sitecore/templates/Branches/Data Exchange/Providers/Azure Service Bus/Branches/Azure Service Bus Tenant Settings Root/Azure Service Bus/Filter Expression
+parent: {535CEAB7-AB36-4DE6-8843-80318B1B44CF}
+name: Filter Expression
+master: {00000000-0000-0000-0000-000000000000}
+template: {F4B039DA-75F5-4461-B140-ADE518ED4C69}
+templatekey: Azure Service Bus Filter Expressions Root
+created: 20180717T085456Z
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----version----
+language: en
+version: 1
+revision: 2a17f499-1c00-4216-950a-d1cc7ce27835
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180717T085456Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2a17f499-1c00-4216-950a-d1cc7ce27835
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180717T085456Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous

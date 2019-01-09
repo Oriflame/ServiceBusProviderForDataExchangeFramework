@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {20829E81-5C4C-4A1F-B342-95B0950DE32F}
+database: master
+path: /sitecore/templates/Data Exchange/Providers/Azure Service Bus/Pipeline Steps/Read Service Bus Messages Pipeline Step/__Standard Values
+parent: {C18CDB2C-A7DF-46F4-BC02-AFD72EFE2C34}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {C18CDB2C-A7DF-46F4-BC02-AFD72EFE2C34}
+templatekey: Read Service Bus Messages Pipeline Step
+created: 20180719T134944Z
+
+----field----
+field: {3C7F78CC-0C5C-4076-80EF-9A49FDA5FF96}
+name: ConverterType
+key: convertertype
+content-length: 121
+
+Ori.DataExchange.Providers.ServiceBus.ReadData.ReadServiceBusMessagesStepConverter, Ori.DataExchange.Providers.ServiceBus
+----field----
+field: {A83A2EB2-BFA1-4D3F-9F17-0CC6C9A91C42}
+name: ProcessorType
+key: processortype
+content-length: 121
+
+Ori.DataExchange.Providers.ServiceBus.ReadData.ReadServiceBusMessagesStepProcessor, Ori.DataExchange.Providers.ServiceBus
+----version----
+language: en
+version: 1
+revision: 50d7e654-a528-4588-b30b-113c3b4352b1
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180719T134944Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+50d7e654-a528-4588-b30b-113c3b4352b1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180719T135136Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
