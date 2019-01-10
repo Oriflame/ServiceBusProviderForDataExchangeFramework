@@ -27,21 +27,33 @@ namespace Ori.DataExchange.Providers.ServiceBus.Endpoints
             {
                 return TroubleshooterResult.FailResult("The endpoint is missing the ServiceBusSettings plugin.");
             }
+
+            var result = new TroubleshooterResult();
+
+            bool wasWrong = false;
             if (string.IsNullOrWhiteSpace(settings.ConnectionString))
             {
-                return TroubleshooterResult.FailResult("The endpoint does not have a connection string specified on it.");
+                wasWrong = true;
+                result.Data.Add("ConnectionString", "There is no Connection String in the endpoint configuration.");
             }
             if (string.IsNullOrWhiteSpace(settings.Topic))
             {
-                return TroubleshooterResult.FailResult("The endpoint does not have a topic specified on it.");
+                wasWrong = true;
+                result.Data.Add("Topic", "There is no Topic in the endpoint configuration.");
             }
             if (string.IsNullOrWhiteSpace(settings.Market))
             {
-                return TroubleshooterResult.FailResult("The endpoint does not have a market specified on it.");
+                wasWrong = true;
+                result.Data.Add("Market", "There is no Market in the endpoint configuration.");
+            }
+            if (wasWrong)
+            {
+                result.Success = false;
+                result.Message = "Wrong configuration.";
+                return result;
             }
 
             // filter preparation:
-
             try
             {
                 var serviceBusService = new ServiceBusService();
@@ -59,11 +71,17 @@ namespace Ori.DataExchange.Providers.ServiceBus.Endpoints
                     try
                     {
                         serviceBus.CreateTopic(settings.Topic);
+                        result.Data.Add("Topic", $"The '{settings.Topic}' topic has been created.");
                     }
                     catch (Exception exception)
                     {
-                        return TroubleshooterResult.FailResult($"Unable to create the '{settings.Topic}' topic.", exception);
+                        return TroubleshooterResult.FailResult($"Unable to create the '{settings.Topic}' topic.",
+                            exception);
                     }
+                }
+                else
+                {
+                    result.Data.Add("Topic", $"The '{settings.Topic}' topic already exist.");
                 }
 
                 // check the subscription existence
@@ -73,17 +91,24 @@ namespace Ori.DataExchange.Providers.ServiceBus.Endpoints
                     try
                     {
                         serviceBus.CreateSubscribtion(settings.Topic, subscriptionName, ruleName, filter);
+                        result.Data.Add("Subscription", $"The '{subscriptionName}' subscription has been created.");
                     }
                     catch (Exception exception)
                     {
-                        return TroubleshooterResult.FailResult($"Unable to create the '{subscriptionName}' subscription.", exception);
+                        return TroubleshooterResult.FailResult(
+                            $"Unable to create the '{subscriptionName}' subscription.", exception);
                     }
+                }
+                else
+                {
+                    result.Data.Add("Subscription", $"The '{subscriptionName}' subscription already exist.");
                 }
 
                 // check the filter
                 try
                 {
                     serviceBus.CheckFilter(settings.Topic, subscriptionName, ruleName, filter);
+                    result.Data.Add("Filter", "The filter has been checked successfully.");
                 }
                 catch (Exception exception)
                 {
@@ -95,7 +120,9 @@ namespace Ori.DataExchange.Providers.ServiceBus.Endpoints
                 return TroubleshooterResult.FailResult($"Something is wrong with ServiceBus: {e.Message}", e);
             }
 
-            return TroubleshooterResult.SuccessResult("The Service Bus endpoint is OK.");
+            result.Success = true;
+            result.Message = "The Service Bus endpoint is OK.";
+            return result;
         }
     }
 }
