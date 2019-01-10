@@ -14,7 +14,7 @@ Logically, the provider consist of:
 - all the ServiceBus specific _business logic_ (to connect to, to create entities and to read data)
 
 # Versions
-The [**master**](https://oriflame.visualstudio.com/MarketingAutomation/_git/Ori.Providers.AzureServiceBus?version=GBmaster) branch holds the version suitable for DEF 2.1.0 (Sitecore 9.1). 
+The [**master**](https://oriflame.visualstudio.com/MarketingAutomation/_git/Ori.Providers.AzureServiceBus?version=GBmaster) branch holds the version suitable for DEF 2.1.0 (Sitecore 9.1, .NET Framework 4.7.1). 
 
 The version of this provider suitable for DEF 2.0.1 (Sitecore 9.0) is available [here](https://oriflame.visualstudio.com/MarketingAutomation/_git/MarketingAutomationSC9-Connectors?path=%2FAzureServiceBusProvider.md&version=GBmaster&_a=preview).
 
@@ -53,9 +53,10 @@ mean that the system will try to read 2000 messages in 20 subsequent batches (by
 
 # Continuous Integration & Continuous Deployment/Delivery
 ## Local development
+- install [.NET Framework 4.7.1](https://dotnet.microsoft.com/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral)
 - install [Sitecore 9.1 on your local machine](https://oriflamecosmetics.sharepoint.com/teams/MarketingAutomation/SitePages/Sitecore-9.1---local-installation.aspx)
 - install [Data Exchange Framework 2.1.0](https://oriflamecosmetics.sharepoint.com/:u:/t/global-it/scguild/EfWfr2UoUh5NmK0xeXeujacBJyjFx9KWRNsafc4p12Vbuw?e=agHzgc)
-- (not required, but recomended :)) [Sitecore Powershell Extensions](https://marketplace.sitecore.net/Modules/Sitecore_PowerShell_console.aspx)
+- (not required, but recommended :)) [Sitecore Powershell Extensions](https://marketplace.sitecore.net/Modules/Sitecore_PowerShell_console.aspx)
 - install [Data Exchange Framework SDK](https://oriflamecosmetics.sharepoint.com/:u:/t/global-it/scguild/EcwaAEo-gadDv_xYop6o060BwFGiBDbIxRXjIkSliDE1uw?e=Bx2JhV) 
 - synchronize items from the TDS project in the repository with your local Sitecore
   - be careful when using TDS with _Lightning mode_: sometimes synchronization must be run twice, but with Lightning mode on you don't have to see the changes the second time :(
