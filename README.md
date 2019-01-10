@@ -25,7 +25,7 @@ To start using the provider you need to have installed already:
 - [Data Exchange Framework 2.1.0](https://oriflamecosmetics.sharepoint.com/:u:/t/global-it/scguild/EfWfr2UoUh5NmK0xeXeujacBJyjFx9KWRNsafc4p12Vbuw?e=agHzgc) 
 - (not required) [Sitecore Powershell Extensions](https://marketplace.sitecore.net/Modules/Sitecore_PowerShell_console.aspx)
 
-As the next step, simply install the package. TODO: add a link to the package.
+As the next step, simply install the [package](https://oriflame.visualstudio.com/MarketingAutomation/_git/Ori.Providers.AzureServiceBus?path=%2FAzure%20Service%20Bus%20Provider-2.0.zip&version=GBmaster).
 
 Finally, configure the system and start using the provider.
 
@@ -65,7 +65,7 @@ mean that the system will try to read 2000 messages in 20 subsequent batches (by
 When you are done with your changes you need to copy the changed assemblies to your wwwroot manually to test the result. 
 
 ## Versioning
-Initial version of the provider is delivered in form of the standard Sitecore ZIP package. TODO: add a link to the package. 
+Initial version of the provider is delivered in form of the standard [Sitecore ZIP package](https://oriflame.visualstudio.com/MarketingAutomation/_git/Ori.Providers.AzureServiceBus?path=%2FAzure%20Service%20Bus%20Provider-2.0.zip&version=GBmaster). 
 
 The subsequent adjustments / changes should be delivered via Sitecore update packages. For this purpose the existing TDS project (**[TDS.Master](https://oriflame.visualstudio.com/MarketingAutomation/_git/Ori.Providers.AzureServiceBus?path=%2FTDS.Master&version=GBmaster)**) should be utilized. For more info see, for example, [this link](https://www.hhogdev.com/help/tds/proppackaging). 
 
